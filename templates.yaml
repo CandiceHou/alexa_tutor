@@ -1,0 +1,23 @@
+welcome: |
+  Welcome to the University of Illinois, Urbana-Champaign virtual tutor skill.
+  Say "help" for more information on what I can do.
+help: |
+  My main function is to help you solve the problems on your courses.
+  For example, you can say, "final exam", to get the final exam information on your courses.
+  For information on which courses I know about, say "what courses are supported?"
+  Or say, "CS 225", and I will partner with your course if it is supported and ask you questions to help narrow down your query.
+ask-class: |
+  Which course do you need help?
+ask-question: |
+  What can I help you with {{ courses }}?
+answer-supported-courses: |
+  I have information for these courses. {% for item in results %}  {{ item }}.. {% endfor %}.
+reprompt_general: |
+  What else can I assist you with?
+error-not-found: |
+  I'm sorry, but I don't have the answer to that. What else can I assist you with?
+error-not-understand: |
+  I'm sorry, but I did not understand that.  Could you ask me again?
+error-other: |
+  I'm sorry, but I experienced an error. Please try again.
+goodbye: Goodbye.
